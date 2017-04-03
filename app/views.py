@@ -22,7 +22,7 @@ def home():
     
 @app.route('/api/thumbnails')
 def thumbnails():
-    url = "https://www.walmart.com/ip/54649026"
+    url = "https://www.walmart.com/ip/PlayStation-3-500GB-Console-PS3/43604185"
     result = requests.get(url)
     soup = BeautifulSoup(result.text, "html.parser")
     

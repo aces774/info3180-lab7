@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import urlparse
 
-url = "https://www.walmart.com/ip/54649026"
+url = "https://www.walmart.com/cp/2871322"
 result = requests.get(url)
 soup = BeautifulSoup(result.text, "html.parser")
 
