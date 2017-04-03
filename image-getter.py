@@ -17,11 +17,8 @@ if og_image and og_image['content']:
 thumbnail_spec = soup.find('link', rel='image_src')
 if thumbnail_spec and thumbnail_spec['href']:
     print thumbnail_spec['href']
-    print ''
+    print ""
 
-images=[]
-image = "%s"
 for img in soup.findAll("img", src=True):
    im = image % urlparse.urljoin(url, img["src"])
-   images+=[im]
-print images
+print ""
