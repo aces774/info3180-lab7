@@ -7,13 +7,12 @@
 
 {% block main %}
 <h1 class="page-header">Thumbnails</h1>
-<p class="lead">Use this starter template for your Flask apps as a way to quickly start any new project.<br>
-All you get are these files and mostly barebones HTML/CSS files.</p>
+<p class="lead"></p>
 
-<div style="margin-left:100px; margin-right:100px;" ng-app="MyApp" ng-controller="MainController">
+<div style="margin-left:50px; margin-right:50px;" ng-app="MyApp" ng-controller="MainController">
 	<div ng-repeat="url in thumbnails track by $index">
-		<div class="col-md-4">
-		    <img class = "img-thumbnail" style="width:200px; height:200x; " src="{{'{{url}}'}}">
+		<div class="col-md-2">
+		    <img class = "img-thumbnail" style="width:100px; height:100x; " src="{{'{{url}}'}}">
     		</div>
 	</div>
 </div>
